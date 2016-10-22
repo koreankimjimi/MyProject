@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body,html{
+    height: 100%;
+    background: #eeeeee;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#time{
+    width: 100%;
+    height: auto;
+    font-size: 160px;
+    color: #333;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    font-weight: bold;
+    line-height:50px;
+    transform: translate(0,-50%);
+}
+#time>span:last-child{
+    color: #555;
+    font-size: 30px;
+}
+#weather{
+    width:100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+
+
+footer{
+    width:100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;   
+    text-align: center;
+    letter-spacing: 50px;
+}
+footer>img{
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+}
