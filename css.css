@@ -7,6 +7,7 @@ body,html{
     height: 100%;
     background: #eeeeee;
 }
+
 #main{
     width: 100%;
     height: 100%;
@@ -14,26 +15,106 @@ body,html{
 }
 #time{
     width: 100%;
-    height: auto;
+    height: 250px;
     font-size: 160px;
     color: #333;
     position: relative;
     text-align: center;
     top: 50%;
     font-weight: bold;
-    line-height:50px;
+    
     transform: translate(0,-50%);
 }
-#time>span:last-child{
-    color: #555;
-    font-size: 30px;
-}
+
 #weather{
     width:100px;
     height: auto;
     position: absolute;
     top: 10px;
-    left: 30px;
+    right: 0;
+}
+
+#calender{
+    width:350px;
+    height:100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+#calender>div:first-child{
+    width:10%;
+    height: 100%;
+    float: left;
+    background: #111;
+    color: #E13C26;
+    z-index: 3;
+    position: relative;
+}
+#calender>div:first-child>span:first-child{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    left: 50%;
+}#calender>div:first-child>span:last-child{
+   color: #fff;
+    position: relative;
+    top: 10px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+#calender>div:last-child{
+    width:90%;
+    height: 100%;
+    float: left;
+    overflow: scroll;
+    z-index: 1;
+    position: relative;
+}
+#calender>div>div{
+    width:100%;
+    height: 100px;
+}
+
+#calender>div>div>div:first-child{
+    width:20%;
+    height: 100%;
+    float: left;
+    color: #fff;
+    background: #111;
+    text-align: center;
+    position: relative;
+}
+#now>span{
+    color: #e13c26;
+}
+#calender>div>div>div:first-child>span{
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+#calender>div>div>div:first-child>span:first-child{
+    font-size:8px;
+}
+
+#calender>div>div>div:last-child{
+    width:80%;
+    height: 100%;
+    background: #E13C26;
+    float: left;
+    box-sizing: border-box;
+    border-bottom: rgba(250,250,250,0.1) solid 1px;
+}
+#calender>div>div>div:last-child:hover{
+    background: #d13C26;
+    cursor: pointer;
+}
+
+.calender_work_list{
+    color: #fff;
+    
 }
 
 

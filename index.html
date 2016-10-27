@@ -8,29 +8,57 @@
     <script>
 //        var msg = new SpeechSynthesisUtterance('ㅈ');
 //        window.speechSynthesis.speak(msg);
+       
     </script>
 </head>
 <body>
     <section id="main">
+<!--      open weather api -->
        <div id="weather">
            
        </div>
+       
+<!--       script clock-->
         <article id="time">
             <span></span><br>
             <span></span>
             
         </article>
+    <!--    calender-->
+        <article id="calender">
+           <div onclick="calender()">
+               
+           </div>
+            <div>
+                <div>
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>    
+            </div>
+           
+        </article>
     </section>
+    
+
+    
+    
+<!--    footer icon menu-->
     <footer>
-        <img src="img/archive.png">
-        <img src="img//speech-bubble.png">
+        <img src="img/archive.png" alt="drive">
+        <img src="img/speech-bubble.png" alt="talk">
+        <img src="img/calendar.png" alt="calender">
     </footer>
     
     
     
     <script src="jquery-1.12.3.min.js"></script>
-    
     <script src="js.js"></script>
+    <script src="js/calender.js"></script>
     <script src="js/timer_js.js"></script>
     <script src="js/weather.js"></script>
 </body>
